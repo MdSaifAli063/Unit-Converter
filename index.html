@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unit Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <noscript>
+    <div class="noscript">This app requires JavaScript to run.</div>
+  </noscript>
+
+  <div class="app">
+    <header class="app-header">
+      <h1 class="title">Unit Converter</h1>
+      <div class="header-controls">
+        <div class="control">
+          <label for="propertySelect">Category</label>
+          <select id="propertySelect" aria-label="Conversion category"></select>
+        </div>
+
+        <div class="control">
+          <label for="precisionSelect">Precision</label>
+          <select id="precisionSelect" aria-label="Decimal precision">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <button id="themeToggle" class="btn btn-ghost" aria-pressed="false" title="Toggle theme">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="btn-text">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <div class="control full">
+        <label for="unitFilter">Filter units</label>
+        <input id="unitFilter" type="text" class="input" placeholder="Type to filter (e.g., meter, kg, °C, mph)..." />
+      </div>
+    </div>
+
+    <main class="converter-card" role="main">
+      <section class="converter-grid">
+        <div class="panel panel-a">
+          <label for="inputA" class="visually-hidden">Value A</label>
+          <input id="inputA" class="input input-number" inputmode="decimal" placeholder="0" value="0" aria-label="Input value A" />
+          <div class="select-row">
+            <label for="unitSelectA" class="visually-hidden">Unit A</label>
+            <select id="unitSelectA" aria-label="Unit A"></select>
+            <button id="copyA" class="btn btn-ghost" title="Copy value A">Copy</button>
+            <button id="clearA" class="btn btn-ghost" title="Clear value A">Clear</button>
+          </div>
+        </div>
+
+        <div class="panel panel-middle">
+          <div class="equals">=</div>
+          <button id="swapBtn" class="btn btn-accent" title="Swap units" aria-label="Swap units">
+            ⇄ Swap
+          </button>
+        </div>
+
+        <div class="panel panel-b">
+          <label for="inputB" class="visually-hidden">Value B</label>
+          <input id="inputB" class="input input-number" inputmode="decimal" placeholder="0" value="0" aria-label="Input value B" />
+          <div class="select-row">
+            <label for="unitSelectB" class="visually-hidden">Unit B</label>
+            <select id="unitSelectB" aria-label="Unit B"></select>
+            <button id="copyB" class="btn btn-ghost" title="Copy value B">Copy</button>
+            <button id="clearB" class="btn btn-ghost" title="Clear value B">Clear</button>
+          </div>
+        </div>
+      </section>
+
+      <p class="helper" id="helperText" aria-live="polite"></p>
+    </main>
+
+    <footer class="app-footer">
+      <p>Tip: Use Tab between fields, type a value on either side, and click Swap to reverse units. Your preferences are saved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
