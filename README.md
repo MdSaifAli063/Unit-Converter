@@ -31,7 +31,7 @@ A fast, accessible, responsive unit converter with a modern UI — built with va
 
 ## 🖼️ Screenshots
 
-- Dark mode: place a screenshot at docs/screenshot-dark.png
+- Dark mode: ![image](https://github.com/MdSaifAli063/Unit-Converter/blob/99a4ba549ca6f5f740c51d86043e8158e506e539/Screenshot%202025-09-06%20004809.png)
 - Light mode: place a screenshot at docs/screenshot-light.png
 
 
