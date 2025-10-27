@@ -147,14 +147,14 @@ Theming
 - Large/small numbers may use scientific notation for readability
 - Inputs display plain numeric values; helper text shows localized formatting
 
-🔒 Persistence
+## 🔒 Persistence
 
 The following are saved in localStorage:
 
-uc:category — last used category
-uc:unitA, uc:unitB — last selected units on each side
-uc:precision — decimal precision
-uc:theme — dark or light
+- uc:category — last used category
+- uc:unitA, uc:unitB — last selected units on each side
+- uc:precision — decimal precision
+- uc:theme — dark or light
 
 ♿ Accessibility
 
