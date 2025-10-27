@@ -141,11 +141,11 @@ Theming
 - Theme is persisted in localStorage (key: uc:theme)
 - Colors and spacing live in CSS variables at the top of style.css
 
-🧪 Precision & Formatting
+## 🧪 Precision & Formatting
 
-Precision control affects decimal places (0–10)
-Large/small numbers may use scientific notation for readability
-Inputs display plain numeric values; helper text shows localized formatting
+- Precision control affects decimal places (0–10)
+- Large/small numbers may use scientific notation for readability
+- Inputs display plain numeric values; helper text shows localized formatting
 
 🔒 Persistence
 
