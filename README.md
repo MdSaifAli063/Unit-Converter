@@ -100,7 +100,7 @@ Length: {
 
 
 Example of a non-linear category (Temperature):
-
+```js
 Temperature: {
   base: 'kelvin',
   units: {
@@ -113,6 +113,7 @@ Temperature: {
     // ...
   }
 }
+```
 
 
 🛠️ Customization
