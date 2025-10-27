@@ -118,12 +118,12 @@ Temperature: {
 
 ## 🛠️ Customization
 
-Add a new unit to an existing category
-Open script.js
-Find the category in UNITS
-Add a new unit entry with factor, symbol, and label
+- Add a new unit to an existing category
+- Open script.js
+- Find the category in UNITS
+- Add a new unit entry with factor, symbol, and label
 Example:
-
+```js
 Mass: {
   base: 'kilogram',
   units: {
@@ -131,7 +131,7 @@ Mass: {
     stone: { factor: 6.35029318, symbol: 'st', label: 'Stone (st)' }
   }
 }
-
+```
 
 Add a new category
 Add a new object with a base and units. Use factor or custom toBase/fromBase functions as needed.
