@@ -134,12 +134,12 @@ Mass: {
 ```
 
 Add a new category
-Add a new object with a base and units. Use factor or custom toBase/fromBase functions as needed.
-Add labels and consistent symbols for a polished UI.
+- Add a new object with a base and units. Use factor or custom toBase/fromBase functions as needed.
+- Add labels and consistent symbols for a polished UI.
 Theming
-Toggle via the top-right button
-Theme is persisted in localStorage (key: uc:theme)
-Colors and spacing live in CSS variables at the top of style.css
+- Toggle via the top-right button
+- Theme is persisted in localStorage (key: uc:theme)
+- Colors and spacing live in CSS variables at the top of style.css
 
 🧪 Precision & Formatting
 
