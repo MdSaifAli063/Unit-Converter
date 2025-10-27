@@ -96,7 +96,7 @@ Length: {
     // ...
   }
 }
-
+```
 
 
 Example of a non-linear category (Temperature):
