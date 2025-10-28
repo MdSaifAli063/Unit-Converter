@@ -165,10 +165,10 @@ The following are saved in localStorage:
 - Helper text uses aria-live="polite" for updates
 - Keyboard-first navigation supported
 
-⚙️ Browser Support
+## ⚙️ Browser Support
 
-Modern evergreen browsers (Chromium, Firefox, Safari)
-Clipboard features may require HTTPS or localhost for full support
+- Modern evergreen browsers (Chromium, Firefox, Safari)
+- Clipboard features may require HTTPS or localhost for full support
 
 🪪 License
 
