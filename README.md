@@ -180,14 +180,3 @@ Fork the repo and create a feature branch
 Keep unit names clear and labels user-friendly
 Test responsive layout and accessibility
 Open a PR with a clear description and screenshots if UI changes are included
-
-🧩 Badges
-
-📫 Support
-
-Have a category or unit you want added? Open an issue with:
-
-Category name
-Unit name, symbol, and either:
-Conversion factor to the base unit, or
-toBase/fromBase functions (for non-linear conversions)
