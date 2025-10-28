@@ -160,10 +160,10 @@ The following are saved in localStorage:
 
 ## ♿ Accessibility
 
-Visible focus styles and large hit areas
-ARIA labels for inputs and selects
-Helper text uses aria-live="polite" for updates
-Keyboard-first navigation supported
+- Visible focus styles and large hit areas
+- ARIA labels for inputs and selects
+- Helper text uses aria-live="polite" for updates
+- Keyboard-first navigation supported
 
 ⚙️ Browser Support
 
