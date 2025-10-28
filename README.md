@@ -174,9 +174,9 @@ The following are saved in localStorage:
 
 MIT License — feel free to use, modify, and distribute.
 
-🙌 Contributing
+## 🙌 Contributing
 
-Fork the repo and create a feature branch
-Keep unit names clear and labels user-friendly
-Test responsive layout and accessibility
-Open a PR with a clear description and screenshots if UI changes are included
+- Fork the repo and create a feature branch
+- Keep unit names clear and labels user-friendly
+- Test responsive layout and accessibility
+- Open a PR with a clear description and screenshots if UI changes are included
