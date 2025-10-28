@@ -170,7 +170,7 @@ The following are saved in localStorage:
 - Modern evergreen browsers (Chromium, Firefox, Safari)
 - Clipboard features may require HTTPS or localhost for full support
 
-🪪 License
+## 🪪 License
 
 MIT License — feel free to use, modify, and distribute.
 
