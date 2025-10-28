@@ -158,7 +158,7 @@ The following are saved in localStorage:
 - uc:precision — decimal precision
 - uc:theme — dark or light
 
-♿ Accessibility
+## ♿ Accessibility
 
 Visible focus styles and large hit areas
 ARIA labels for inputs and selects
