@@ -114,7 +114,6 @@ Temperature: {
 }
 ```
 
-
 ## 🛠️ Customization
 
 - Add a new unit to an existing category
