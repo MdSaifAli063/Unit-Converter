@@ -34,7 +34,6 @@ A fast, accessible, responsive unit converter with a modern UI — built with va
 - Dark mode: ![image](https://github.com/MdSaifAli063/Unit-Converter/blob/99a4ba549ca6f5f740c51d86043e8158e506e539/Screenshot%202025-09-06%20004809.png)
 - Light mode: ![image](https://github.com/MdSaifAli063/Unit-Converter/blob/d8c4691eb0a3236ff86c3af7bc17765f7578c0c5/Screenshot%202025-09-06%20010635.png)
 
-
 ---
 
 ## 🚀 Getting Started
