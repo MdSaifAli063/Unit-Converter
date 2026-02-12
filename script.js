@@ -13,7 +13,7 @@
   const el = {
     property: $('#propertySelect'),
     precision: $('#precisionSelect'),
-    themeToggle: $('#themeToggle'),
+    themeToggle: null,
     unitFilter: $('#unitFilter'),
     inputA: $('#inputA'),
     inputB: $('#inputB'),
@@ -297,26 +297,9 @@
     localStorage.setItem(STORAGE.precision, el.precision.value);
   }
 
-  function restoreTheme() {
-    const pref = localStorage.getItem(STORAGE.theme);
-    if (pref === 'light') {
-      document.body.classList.add('light');
-      el.themeToggle.setAttribute('aria-pressed', 'true');
-      el.themeToggle.querySelector('.icon').textContent = '🌞';
-      el.themeToggle.querySelector('.btn-text').textContent = 'Light';
-    } else {
-      document.body.classList.remove('light');
-      el.themeToggle.setAttribute('aria-pressed', 'false');
-      el.themeToggle.querySelector('.icon').textContent = '🌙';
-      el.themeToggle.querySelector('.btn-text').textContent = 'Dark';
-    }
-  }
-
-  function toggleTheme() {
-    const isLight = document.body.classList.toggle('light');
-    localStorage.setItem(STORAGE.theme, isLight ? 'light' : 'dark');
-    restoreTheme();
-  }
+  // Theme removed: always light
+  function restoreTheme() {}
+  function toggleTheme() {}
 
   function restoreState() {
     const category = localStorage.getItem(STORAGE.category);
@@ -362,7 +345,12 @@
     const out = convert(cat, el.unitA.value, el.unitB.value, v);
     const precision = el.precision.value;
     el.inputB.value = formatNumber(out, precision).replace(/,/g, ''); // keep plain in input
-    setHelper(`${formatNumber(v, precision)} ${symbolOf(cat, el.unitA.value)} = ${formatNumber(out, precision)} ${symbolOf(cat, el.unitB.value)}`);
+    const pretty = `${formatNumber(out, precision)} ${symbolOf(cat, el.unitB.value)}`;
+    const lhs = `${formatNumber(v, precision)} ${symbolOf(cat, el.unitA.value)}`;
+    const rhs = `${formatNumber(out, precision)} ${symbolOf(cat, el.unitB.value)}`;
+    const big = document.getElementById('bigResult');
+    if (big) big.textContent = pretty;
+    setHelper(`${lhs} = ${rhs}`);
     saveState();
   }
 
@@ -378,7 +366,12 @@
     const out = convert(cat, el.unitB.value, el.unitA.value, v);
     const precision = el.precision.value;
     el.inputA.value = formatNumber(out, precision).replace(/,/g, '');
-    setHelper(`${formatNumber(v, precision)} ${symbolOf(cat, el.unitB.value)} = ${formatNumber(out, precision)} ${symbolOf(cat, el.unitA.value)}`);
+    const pretty = `${formatNumber(out, precision)} ${symbolOf(cat, el.unitA.value)}`;
+    const lhs = `${formatNumber(v, precision)} ${symbolOf(cat, el.unitB.value)}`;
+    const rhs = `${formatNumber(out, precision)} ${symbolOf(cat, el.unitA.value)}`;
+    const big = document.getElementById('bigResult');
+    if (big) big.textContent = pretty;
+    setHelper(`${lhs} = ${rhs}`);
     saveState();
   }
 
@@ -441,9 +434,8 @@
 
   // Init
   function init() {
-    // Theme
+    // Theme removed
     restoreTheme();
-    el.themeToggle.addEventListener('click', toggleTheme);
 
     // Populate categories and state
     populateCategories();
