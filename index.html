@@ -14,9 +14,12 @@
     <div class="noscript">This app requires JavaScript to run.</div>
   </noscript>
 
-  <div class="app">
+  <div class="app app-centered" role="application" aria-label="Unit Converter">
     <header class="app-header">
-      <h1 class="title">Unit Converter</h1>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🔁</div>
+        <h1 class="title">Unit Converter</h1>
+      </div>
       <div class="header-controls">
         <div class="control">
           <label for="propertySelect">Category</label>
@@ -38,17 +41,13 @@
           </select>
         </div>
 
-        <button id="themeToggle" class="btn btn-ghost" aria-pressed="false" title="Toggle theme">
-          <span class="icon" aria-hidden="true">🌙</span>
-          <span class="btn-text">Dark</span>
-        </button>
-      </div>
+        </div>
     </header>
 
     <div class="toolbar">
       <div class="control full">
         <label for="unitFilter">Filter units</label>
-        <input id="unitFilter" type="text" class="input" placeholder="Type to filter (e.g., meter, kg, °C, mph)..." />
+        <input id="unitFilter" type="text" class="input" placeholder="Search units (e.g., meter, kg, °C, mph)" />
       </div>
     </div>
 
@@ -56,7 +55,7 @@
       <section class="converter-grid">
         <div class="panel panel-a">
           <label for="inputA" class="visually-hidden">Value A</label>
-          <input id="inputA" class="input input-number" inputmode="decimal" placeholder="0" value="0" aria-label="Input value A" />
+          <input id="inputA" class="input input-number big" inputmode="decimal" placeholder="0" value="0" aria-label="Input value A" />
           <div class="select-row">
             <label for="unitSelectA" class="visually-hidden">Unit A</label>
             <select id="unitSelectA" aria-label="Unit A"></select>
@@ -66,15 +65,13 @@
         </div>
 
         <div class="panel panel-middle">
-          <div class="equals">=</div>
-          <button id="swapBtn" class="btn btn-accent" title="Swap units" aria-label="Swap units">
-            ⇄ Swap
-          </button>
+          <div class="equals" aria-hidden="true">=</div>
+          <button id="swapBtn" class="btn btn-accent pill fab" title="Swap units" aria-label="Swap units" aria-describedby="helperText">⇄</button>
         </div>
 
         <div class="panel panel-b">
           <label for="inputB" class="visually-hidden">Value B</label>
-          <input id="inputB" class="input input-number" inputmode="decimal" placeholder="0" value="0" aria-label="Input value B" />
+          <input id="inputB" class="input input-number big" inputmode="decimal" placeholder="0" value="0" aria-label="Input value B" />
           <div class="select-row">
             <label for="unitSelectB" class="visually-hidden">Unit B</label>
             <select id="unitSelectB" aria-label="Unit B"></select>
@@ -88,7 +85,7 @@
     </main>
 
     <footer class="app-footer">
-      <p>Tip: Use Tab between fields, type a value on either side, and click Swap to reverse units. Your preferences are saved.</p>
+      <p>Tip: Type a value on either side, use Swap to reverse units. Preferences are saved automatically.</p>
     </footer>
   </div>
 
