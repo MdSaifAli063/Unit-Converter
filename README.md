@@ -31,8 +31,7 @@ A fast, accessible, responsive unit converter with a modern UI — built with va
 
 ## 🖼️ Screenshots
 
-
-- Light mode: ![image](https://github.com/MdSaifAli063/Unit-Converter/blob/d8c4691eb0a3236ff86c3af7bc17765f7578c0c5/Screenshot%202025-09-06%20010635.png)
+![image](https://github.com/MdSaifAli063/Unit-Converter/blob/d8c4691eb0a3236ff86c3af7bc17765f7578c0c5/Screenshot%202025-09-06%20010635.png)
 
 ---
 
